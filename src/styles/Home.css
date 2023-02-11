@@ -1,0 +1,13 @@
+.background {
+    background-image: url('../asset/background.png');
+    margin-top: 63px;
+    height: 223px;
+}
+
+.logo {
+    border-radius: 25px;
+    width: 100%;
+    opacity: 30%;
+    height: inherit;
+    object-fit: cover;
+}
