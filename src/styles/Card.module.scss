@@ -1,0 +1,27 @@
+.container {
+    background: #F6F6F6;
+    border-radius: 25px;
+    margin: 43px 0;
+    padding: 56px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+.list {
+    display: flex;
+    align-items: end;
+    position: relative;
+}
+.img {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+} 
+.title {
+    position: absolute;
+    color: white;
+    margin: 20px;
+    font-size: 18px;
+}
+
