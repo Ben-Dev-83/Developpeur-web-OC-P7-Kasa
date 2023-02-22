@@ -2,6 +2,7 @@
     max-width: 1023px;
     margin: auto;
     margin-top: 31px;
+    width: 100%;
 }
 
 .titleContainer {
@@ -17,8 +18,12 @@
 }
 
 .containerDesc {
+    // min-height: 249px;
     &__description {
-        padding: 1rem;
+        padding: 40px 20px;
+    }
+    &__aboutDesc {
+        padding: 36px 19px 18px 19px;
     }
 }
 
@@ -40,3 +45,7 @@
 .color :nth-of-type(1) {
     color: white;
   }
+
+  .height {
+    height: 289px;
+}
