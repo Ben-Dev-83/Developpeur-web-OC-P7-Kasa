@@ -1,13 +1,28 @@
-.background {
-    background-image: url('../asset/background.png');
-    margin-top: 63px;
+.header {
     height: 223px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .logo {
     border-radius: 25px;
     width: 100%;
-    opacity: 30%;
     height: inherit;
     object-fit: cover;
+    filter: brightness(0.7);
 }
+
+.title {
+    position: absolute;
+    color: white;
+}
+
+.app-layout {
+    margin: auto;
+    max-width: 1240px;
+    width: 100%;
+    flex: 1;
+  }
