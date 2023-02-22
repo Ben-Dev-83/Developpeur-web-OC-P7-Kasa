@@ -11,11 +11,14 @@ import Tags from '../components/Tags'
 import Rate from '../components/Rate'
 
 
-function Accommodation() {
+
+function Accommodation(props) {
+  console.log(props.styled)
         let { id } = useParams();
         const accommodationFind = accommodationList.find((accommodation) => {
             return accommodation.id === id
         })
+
         return (
           <div className='container'>
             <Banner/>
@@ -47,10 +50,12 @@ function Accommodation() {
               <Collapse
                 title= "Description"
                 text= {accommodationFind.description}
+                styled= {true}
                 />
               <Collapse
                 title= "Équipements"
                 text= {accommodationFind.equipments}
+                styled= {true}
                 />
             </div>
             </div>
