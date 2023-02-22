@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0 24px 0;
+    &__tags {
+        background: #FF6060;
+        width: fit-content;
+        height: 25px;
+        padding: 0 37px;
+        border-radius: 10px;
+    }
+    &__paragraphe {
+        color: white;
+        height: inherit;
+    }
+}
