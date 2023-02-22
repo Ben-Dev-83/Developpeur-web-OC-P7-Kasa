@@ -7,7 +7,7 @@ function Carrousel(props) {
     let  pictures = props.pictures
     let [index, setIndex] = useState(0);
     let length = pictures.length
-    const display = CarrouselStyle.container__display
+    const display = pictures.length === 1 ? CarrouselStyle.hide : CarrouselStyle.container__display
     console.log(pictures.length)
 
     const handlePrevious = () => {
