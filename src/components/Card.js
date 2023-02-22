@@ -9,7 +9,7 @@ function Card() {
     return (
         <div className={cardStyle.container}>
             {accommodationList.map((announcement, index) => (
-                <Link to={`/logement/${announcement.id}`} key={index} className={cardStyle.list}>
+                <Link to={`/logement/${announcement.id}`} key={index} className={cardStyle.list} styled={true}>
                     <h2 className={cardStyle.title}>{announcement.title}</h2>
                     <img src={announcement.cover} alt={announcement.title} className={cardStyle.img}/>
                 </Link>
