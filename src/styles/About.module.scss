@@ -15,3 +15,9 @@
     object-fit: cover;
     filter: brightness(0.7);
 }
+.layout {
+    margin: auto;
+    max-width: 1240px;
+    width: 100%;
+    flex: 1;
+  }
