@@ -1,18 +1,27 @@
+@import './typography/_colors.scss';
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .title {
-    color: #FF6060;
+    color: $red;
     font-size: 288px;
+    font-weight: 700;
+    line-height: 411px;
 }
 
 .paragraphe {
+    font-weight: 500;
     font-size: 36px;
+    line-height: 51px;
+    color: $red;
 }
 
 .link {
-    font-size: 18px;
     margin-top: 182px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
 }
