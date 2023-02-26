@@ -1,13 +1,29 @@
+@import './typography/colors.scss';
+@import './utils/mixin.scss';
+
 nav {
     display: flex;
     gap: 57px;
+    @include mobile {
+        gap: 10px;
+    }
 }
-
-.link {
+a {
+    font-weight: 500;
+    font-size: 24px;
+    color: $red;
     text-decoration: none;
-    font-size: 1.5rem;
-    color: #FF6060;
+    @include mobile {
+        font-size: 12px;
+        line-height: 17px;
+    }
     &:hover {
         text-decoration: underline;
     }
+}
+.active {
+    text-decoration: underline;
+}
+.disabled{
+    text-decoration: none;
 }

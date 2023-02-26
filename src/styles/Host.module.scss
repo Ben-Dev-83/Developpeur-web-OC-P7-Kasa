@@ -1,3 +1,6 @@
+@import './typography/_colors.scss';
+@import './utils/mixin.scss';
+
 .container {
     display: flex;
     gap: 10px;
@@ -6,13 +9,25 @@
 }
 
 .name {
-    color: #FF6060;
+    color: $red;
     display: flex;
     flex-basis: min-content;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    @include mobile {
+        font-size: 12px;
+        line-height: 17px;
+    }
 }
 
 .img {
     width: 64px;
     height: 64px;
     border-radius: 50%;
+    @include mobile {
+        height: 32px;
+        width: 32px;
+    }
 }
+
