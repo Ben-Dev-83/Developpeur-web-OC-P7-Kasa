@@ -1,0 +1,10 @@
+@import './typography/_colors.scss';
+
+.container {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    &__img {
+        width: 30px;
+    }
+}
