@@ -1,0 +1,40 @@
+@import './utils/mixin.scss';
+
+.header {
+    height: 223px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    @include mobile {
+        height: 111px;
+    }
+}
+
+// .logo {
+//     border-radius: 25px;
+//     width: 100%;
+//     height: inherit;
+//     object-fit: cover;
+//     filter: brightness(0.7);
+// }
+
+// .title {
+//     position: absolute;
+//     color: white;
+//     font-size: 48px;
+//     font-weight: 500;
+//     text-align: center;
+//     @include mobile {
+//         font-size: 24px;
+//         line-height: 24px;
+//     }
+// }
+
+.app-layout {
+    margin: auto;
+    max-width: 1240px;
+    width: 100%;
+    flex: 1;
+  }

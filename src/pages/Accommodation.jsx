@@ -3,8 +3,8 @@ import Carrousel from "../components/Carrousel";
 import Collapse from "../components/Collapse";
 import Host from "../components/Host";
 import accommodationList from '../kasa.json'
-import style from '../styles/Accomodation.module.scss'
-import LayoutStyle from '../styles/AppLayout.module.scss'
+import style from '../styles/_Accomodation.module.scss'
+import LayoutStyle from '../styles/_AppLayout.module.scss'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Tags from '../components/Tags'
@@ -27,8 +27,8 @@ function Accommodation() {
             />
             <div className={style.container}>
               <section>
-                <h1 className={style.title}>{accommodationFind.title}</h1>
-                <p className={style.location}>{accommodationFind.location}</p>
+                <h1 className={style.container__title}>{accommodationFind.title}</h1>
+                <p className={style.container__location}>{accommodationFind.location}</p>
                 <Tags
                   tags= {accommodationFind.tags}
                   />

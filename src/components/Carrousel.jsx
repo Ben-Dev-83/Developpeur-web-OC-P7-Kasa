@@ -1,4 +1,4 @@
-import style from '../styles/Carrousel.module.scss'
+import style from '../styles/_Carrousel.module.scss'
 import { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
@@ -30,7 +30,7 @@ function Carrousel(props) {
     return (
         <div>
             <div className={style.container}>
-                <img src={pictures[index]} alt={index} className={`${style.img} ${loaded ? style.flash :"" }`} onLoad={() => setLoaded(true)}/>
+                <img src={pictures[index]} alt={index} className={`${style.container__img} ${loaded ? style.flash :"" }`} onLoad={() => setLoaded(true)}/>
                 <div className={display}>
                     <div className={style.container__icons}>
                     <FontAwesomeIcon icon={faChevronLeft} className={style.icon} onClick={handlePrevious}/>

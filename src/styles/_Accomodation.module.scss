@@ -1,0 +1,52 @@
+@import './typography/_colors.scss';
+@import './utils/mixin.scss';
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    @include mobile {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 51px;
+        color: $red;
+    @include mobile {
+        font-size: 18px;
+        line-height: 26px;
+        }
+    }
+    &__location {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        color: $red;
+        @include mobile {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    &__host {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        @include mobile {
+            flex-direction: row-reverse;
+            gap: 0;
+            justify-content: space-between;
+            flex-wrap: wrap-reverse;
+        }
+    }
+}
+
+.collapse {
+    display: flex;
+    gap: 80px;
+    @include mobile {
+        flex-direction: column;
+        gap: 0;
+    }
+}

@@ -1,4 +1,4 @@
-import style from '../styles/Rate.module.scss'
+import style from '../styles/_Rate.module.scss'
 import starEmpty from '../assets/star-empty.svg'
 import starFull from '../assets/star-full.svg'
 

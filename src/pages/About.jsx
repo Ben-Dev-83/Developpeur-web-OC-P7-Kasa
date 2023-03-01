@@ -1,5 +1,5 @@
 import logo from '../assets/kalen-emsley.png'
-import LayoutStyle from '../styles/AppLayout.module.scss'
+import LayoutStyle from '../styles/_AppLayout.module.scss'
 import Collapse from '../components/Collapse';
 import Header from '../components/Header'
 import Footer from '../components/Footer'
