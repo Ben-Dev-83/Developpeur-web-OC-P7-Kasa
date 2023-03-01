@@ -1,13 +1,11 @@
 import style from '../styles/Banner.module.scss'
-import NavBar from "./NavBar"
-import logo from '../assets/logo.png'
 
-function Banner() {
+function Banner(props) {
     return (
-        <header className={style.container}>
-            <img className={style.container__img} src={logo} alt="logo"/>,
-            <NavBar/>
-        </header>
+        <div className={style.header}>
+            <img src={props.logo} alt="fond mer" className={style.logo}/>
+            <h1 className={style.title}>{props.title}</h1>
+        </div>
     )
 }
 

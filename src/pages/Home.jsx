@@ -1,22 +1,19 @@
 import logo from '../assets/fond-mer.png';
-import '../styles/Home.scss';
+import style from '../styles/Home.module.scss';
 import LayoutStyle from '../styles/AppLayout.module.scss'
-
 import Card from '../components/Card'
-import Banner from '../components/Banner'
+import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Banner from '../components/Banner'
 
 function Home() {
     return (
-        <div className='container'>
-            <Banner/>
-            <div className={LayoutStyle.layout}>
-                <div className='header'>
-                    <img src={logo} alt="fond mer" className='logo'/>
-                    <h1 className='title'>Chez vous, partout et ailleurs</h1>
-                </div>
+        <div className={style.container}>
+            <Header/>
+            <main className={LayoutStyle.layout}>
+                <Banner logo={logo} title="Chez vous, partout et ailleurs"/>
                 <Card/>
-            </div>
+            </main>
         <Footer/>
         </div>
     )

@@ -1,20 +1,32 @@
 @import './utils/mixin.scss';
 
-.container {
+.header {
+    height: 223px;
+    border-radius: 25px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1240px;
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 44px;
-    padding: 0 20px 0 20px; 
+    justify-content: center;
+    position: relative;
     @include mobile {
-        margin: 20px 0;
+        height: 111px;
     }
-    &__img {
-        @include mobile {
-            height: 43.03px;
-        }
+}
+.logo {
+    border-radius: 25px;
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.title {
+    position: absolute;
+    color: white;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+    @include mobile {
+        font-size: 24px;
+        line-height: 24px;
     }
 }

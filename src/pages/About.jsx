@@ -1,26 +1,24 @@
 import logo from '../assets/kalen-emsley.png'
-import AProposStyle from '../styles/About.module.scss'
 import LayoutStyle from '../styles/AppLayout.module.scss'
 import Collapse from '../components/Collapse';
-import Banner from '../components/Banner'
+import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Banner from '../components/Banner'
 
 function APropos() {
     return (
         <div className='container'>
-            <Banner/>
-            <div className={LayoutStyle.layout}>
-                <div className={AProposStyle.header}>
-                    <img src={logo} alt="kalen emsley" className={AProposStyle.logo}/>
-                </div>
+            <Header/>
+            <main className={LayoutStyle.layout}>
+                <Banner logo={logo}/>
                 {collapseTexte.map((collapse, index) => (
                     <Collapse
-                    key={index}
-                    title={collapse.title}
-                    text={collapse.text}
+                        key={index}
+                        title={collapse.title}
+                        text={collapse.text}
                     />
                     ))}
-                </div>
+                </main>
                 <Footer/>
             </div>
     )

@@ -1,11 +1,11 @@
-import TagStyle from'../styles/Tag.module.scss'
+import style from'../styles/Tag.module.scss'
 
 function Tags(props) {
     return (
-        <div className={TagStyle.container}>
+        <div className={style.container}>
             {props.tags.map((tag, index) => (
-                <div className={TagStyle.container__tags} key={index}>
-                <p className={TagStyle.container__paragraphe}>
+                <div className={style.container__tags} key={index}>
+                <p className={style.container__paragraphe}>
                     {tag}
                 </p>
                 </div>
