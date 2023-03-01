@@ -7,7 +7,7 @@ Kasa me recrute en tant que développeur front-end en freelance pour développer
 React,
 React Router,
 HTML,
-Sass,
+Sass
 
 ## Installation
 
