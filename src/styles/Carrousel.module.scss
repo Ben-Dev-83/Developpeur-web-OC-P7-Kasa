@@ -34,12 +34,12 @@
       justify-content: center;
       align-items: flex-end;
       color: $white;
+      left: 0;
       bottom: 24.92px;
       font-size: 18px;
       font-weight: 500;
     }
 }
-
 .img {
     max-width: 1240px;
     width: 100%;
@@ -49,18 +49,33 @@
       height: 255px;
     }
 }
-
-
 .icon {
   font-size: 79.2px;
   cursor: pointer;
+  @include mobile {
+    font-size: 19.8px;
+  }
 }
 
 .icon :nth-of-type(1) {
     color: $white;
+    
 }
 
 .hide {
   display: none;
 }
 
+
+.flash {
+  animation: flash .7s;
+}
+
+@keyframes flash {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
