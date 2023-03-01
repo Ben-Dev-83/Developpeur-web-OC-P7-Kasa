@@ -1,3 +1,22 @@
+# Kaza - Agence de location immobilière
+
+Kasa me recrute en tant que développeur front-end en freelance pour développer sa nouvelle plateforme web. Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.
+
+## Technologies :
+
+React
+React Router
+HTML
+Sass
+
+## Installation
+
+Cloner le projet avec la commande `git clone https://github.com/Ben-Dev-83/OC-P7.git`
+
+Installer les dépendances avec la commande `npm install`
+
+Démarrer le serveur local avec la commande `npm start`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
