@@ -1,13 +1,13 @@
 @import './utils/mixin.scss';
 
 .container {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
-    &__img {
-        width: 30px;
-        @include mobile {
-            width: 15px;
-        }
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  &__img {
+    width: 30px;
+    @include mobile {
+      width: 15px;
     }
+  }
 }

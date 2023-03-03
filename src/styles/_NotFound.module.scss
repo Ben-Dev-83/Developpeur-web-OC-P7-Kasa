@@ -2,43 +2,43 @@
 @import './utils/mixin.scss';
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
 .title {
-    color: $red;
-    font-size: 288px;
-    font-weight: 700;
-    line-height: 411px;
-    @include mobile {
-        font-size: 96px;
-        line-height: 137px;
-    }
+  color: $red;
+  font-size: 288px;
+  font-weight: 700;
+  line-height: 411px;
+  @include mobile {
+    font-size: 96px;
+    line-height: 137px;
+  }
 }
 
 .paragraphe {
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 51px;
-    color: $red;
-    text-align: center;
-    @include mobile {
-        font-size: 18px;
-        line-height: 26px;
-    }
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 51px;
+  color: $red;
+  text-align: center;
+  @include mobile {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 
 .link {
-    margin-top: 182px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
-    @include mobile {
-        font-size: 14px;
-        line-height: 20px;
-        margin-top: 133px;
-
-    }
+  margin-top: 182px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  @include mobile {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 133px;
+  }
 }

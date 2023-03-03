@@ -1,20 +1,20 @@
 @import './utils/mixin.scss';
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1240px;
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 44px;
-    padding: 0 20px 0 20px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1240px;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 44px;
+  padding: 0 20px 0 20px; 
+  @include mobile {
+    margin: 20px 0;
+  }
+  &__img {
     @include mobile {
-        margin: 20px 0;
+      height: 43.03px;
     }
-    &__img {
-        @include mobile {
-            height: 43.03px;
-        }
-    }
+  }
 }

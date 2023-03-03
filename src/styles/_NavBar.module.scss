@@ -2,28 +2,31 @@
 @import './utils/mixin.scss';
 
 nav {
-    display: flex;
-    gap: 57px;
-    @include mobile {
-        gap: 10px;
-    }
+  display: flex;
+  gap: 57px;
+  @include mobile {
+    gap: 10px;
+  }
 }
+
 a {
-    font-weight: 500;
-    font-size: 24px;
-    color: $red;
-    text-decoration: none;
-    @include mobile {
-        font-size: 12px;
-        line-height: 17px;
-    }
-    &:hover {
-        text-decoration: underline;
-    }
-}
-.active {
+  font-weight: 500;
+  font-size: 24px;
+  color: $red;
+  text-decoration: none;
+  @include mobile {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  &:hover {
     text-decoration: underline;
+  }
 }
+
+.active {
+  text-decoration: underline;
+}
+
 .disabled{
-    text-decoration: none;
+  text-decoration: none;
 }
