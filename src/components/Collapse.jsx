@@ -8,12 +8,12 @@ function Collapse(props) {
   const height= props.styled ? style['height'] : '';
 
   return (
-    <div className={`${height} ${style.container} ${collapse ? style.collapseOp : style.collapseClose}`}>
+    <div className={`${style.container} ${collapse ? style.collapseOp : style.collapseClose}`}>
       <div className={style.titleContainer} onClick={() => collapseOpen(!collapse)} >
         <h2 className={style.titleContainer__title}>{props.title}</h2>
         <img src={collapse ? arrowUp : arrowDown} alt='flèche' className={style.icon} />
       </div>
-      <div className={ Array.isArray(props.text) ? `${style.containerDesc__description}` : `${style.containerDesc__aboutDesc}`}>
+      <div className={Array.isArray(props.text) ? `${style.containerDesc__description} ${height}` : `${style.containerDesc__aboutDesc} ${height}`}>
         {Array.isArray(props.text) ? props.text.map((desc, index) => (
           <p key={index} className={style.containerDesc__paragraphe}>{desc}</p>
           )) : <p className={style.containerDesc__paragraphe}>{props.text}</p>
