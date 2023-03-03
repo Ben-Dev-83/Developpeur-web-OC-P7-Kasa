@@ -50,10 +50,10 @@
 }
 
 .icon {
-  font-size: 79.2px;
+  width: 46.68px;
   cursor: pointer;
   @include mobile {
-    font-size: 19.8px;
+    width: 11.67px;
   }
 }
 
