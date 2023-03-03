@@ -18,6 +18,12 @@
   }
 }
 
+.article {
+  @include mobile {
+    width: 100%;
+  }
+}
+
 .list {
   display: flex;
   align-items: flex-end;
