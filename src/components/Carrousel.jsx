@@ -1,7 +1,7 @@
 import style from '../styles/_Carrousel.module.scss';
 import { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import arrowLeft from '../assets/arrow-left.svg';
+import arrowRight from '../assets/arrow-right.svg';
 
 function Carrousel(props) {
   let pictures = props.pictures;
@@ -34,8 +34,8 @@ function Carrousel(props) {
         <img src={pictures[index]} alt={index} className={`${style.container__img} ${loaded ? style.flash :"" }`} onLoad={() => setLoaded(true)}/>
         <div className={display}>
           <div className={style.container__icons}>
-            <FontAwesomeIcon icon={faChevronLeft} className={style.icon} onClick={handlePrevious}/>
-            <FontAwesomeIcon icon={faChevronRight} className={style.icon} onClick={handleNext}/>
+            <img src={arrowLeft} alt="flèche de gauche" className={style.icon} onClick={handlePrevious}/>
+            <img src={arrowRight} alt="flèche de droite" className={style.icon} onClick={handleNext}/>
           </div>
           <p className={style.container__stage}>{`${index +1}/${length}`}</p>
         </div>
