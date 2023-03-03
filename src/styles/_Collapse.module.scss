@@ -81,13 +81,19 @@
   transition: max-height .5s ease;
 }
 
-.iconColor :nth-of-type(1) {
-  color: $white;
+.icon {
+  width: 26.4px;
+  @include mobile {
+    width: 15px;
+  }
+  &:nth-of-type(1) {
+    color: $white;
+  }
 }
 
 .height {
-  height: 289px;
+  min-height: 289px;
   @include mobile {
-    height: max-content;
+    min-height: auto;
   }
 }
