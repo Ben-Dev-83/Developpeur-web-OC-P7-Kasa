@@ -11,7 +11,7 @@ Sass
 
 ## Installation
 
-Cloner le projet avec la commande `git clone https://github.com/Ben-Dev-83/OC-P7.git`
+Cloner le projet avec la commande `git clone https://github.com/Ben-Dev-83/Developpeur-web-OC-P7-Kasa.git`
 
 Installer les dépendances avec la commande `npm install`
 
